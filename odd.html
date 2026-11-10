@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>odd_sum</title>
+</head>
+<body>
+
+<p>Enter two numbers:</p>
+
+<input type="number" id="num1">
+<button onclick="add()">=</button>
+
+<p>The sum of two numbers are</p>
+
+<h2 id="result"></h2>
+
+<script>
+function add() {
+    let n1 = +num1.value;
+    let odd_sum = 0;
+    let i = 1;
+
+    while (i <= n1) {
+        odd_sum = odd_sum + i;
+        i = i + 2;
+    }
+
+    let resultElement = document.getElementById("result");
+    resultElement.textContent = odd_sum;
+}
+</script>
+
+</body>
+</html>

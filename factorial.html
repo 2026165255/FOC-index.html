@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>factorial</title>
+</head>
+<body>
+
+<p>Enter a number:</p>
+
+<input type="number" id="num1">
+<button onclick="factorial()">=</button>
+
+<p>The sum of two numbers are</p>
+
+<h2 id="result"></h2>
+
+<script>
+function factorial() {
+    let n1 = +num1.value;
+    let factorial = 1;
+    let i = 1;
+
+    while (i <= n1) {
+        factorial= factorial * i;
+        i++;
+    }
+
+    let resultElement = document.getElementById("result");
+    resultElement.textContent = factorial;
+}
+</script>
+
+</body>
+</html>

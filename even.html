@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>even_sum</title>
+</head>
+<body>
+
+<p>Enter a number:</p>
+
+<input type="number" id="num1">
+<button onclick="add()">=</button>
+
+<p>The sum of two numbers are</p>
+
+<h2 id="result"></h2>
+
+<script>
+function add() {
+    let n1 = +num1.value;
+    let even_sum = 0;
+    let i = 2;
+
+    while (i <= n1) {
+        even_sum = even_sum + i;
+        i = i + 2;
+    }
+
+    let resultElement = document.getElementById("result");
+    resultElement.textContent = even_sum;
+}
+</script>
+
+</body>
+</html>
